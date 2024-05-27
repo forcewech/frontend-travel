@@ -233,7 +233,7 @@ export default function Listtour() {
               <Option value="trong">Tour trong nước</Option>
               <Option value="ngoai">Tour nước ngoài</Option>
             </Select>
-            {state.check === "trong" ? (
+            {/* {state.check === "trong" ? (
               <div>
                 <h4 className="mt-3">Vùng</h4>
                 <Select
@@ -303,7 +303,7 @@ export default function Listtour() {
                   </span>
                 </li>
               </ul>
-            </div>
+            </div> */}
             {/* <div className="star-mid text-primary">
                             <span onClick={() => checkstar(5)} style={{ cursor: "pointer" }}><Rate value="5" disabled /><span className="ml-2">từ 5 sao</span><br /></span>
                             <span onClick={() => checkstar(4)} style={{ cursor: "pointer" }}><Rate value="4" disabled /><span className="ml-2">từ 4 sao</span><br /></span>

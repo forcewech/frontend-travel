@@ -206,6 +206,10 @@ function Tour(props) {
   }
   const history = useHistory();
   const handleOk2 = async () => {
+    if(stylepayment !== 3){
+      message.warning("Bạn chưa chọn hình thức thanh toán!")
+      return
+    }
     if (state.dieukhoan === false) {
       message.warning("Bạn chưa đồng ý điều khoản của chúng tôi!")
     } else {
@@ -236,7 +240,6 @@ function Tour(props) {
     });
   };
   const onchange = (e) => {
-
     setState({
       ...state,
       [e.target.name]: e.target.value
@@ -334,32 +337,6 @@ function Tour(props) {
                         <tr>
                           <td><span>Khởi hành:</span></td>
                           <td><span>{state.date === "" ? formatlaidate(checkngaydi()) : state.date}</span></td>
-                          <td>
-                            <Popover
-                              content={
-                                <div>
-                                  <Radio.Group onChange={onChangedate} value={state.valueDate}>
-                                    {state.listdate === "" ? "" :
-                                      state.listdate.map(ok => (
-                                        <Radio style={radioStyle} key={ok.id} value={ok.id}>
-                                          <span onClick={() => { adddate(ok.id) }}>{ok.ngay}</span><br />
-                                        </Radio>
-                                      ))}
-                                  </Radio.Group>
-                                  <hr />
-                                  <div className="text-center">
-                                    <strong className="text-danger" style={{ cursor: "pointer" }} onClick={hide}>Close</strong>
-                                  </div>
-                                </div>
-                              }
-                              title="Chọn ngày khác"
-                              trigger="click"
-                              visible={state.visible3}
-                              onVisibleChange={handleVisibleChange}
-                            >
-                              <span className="text-primary" style={{ cursor: "pointer" }}>Đổi ngày</span>
-                            </Popover>
-                          </td>
                         </tr>
                         <tr>
                           <td><span>Thời gian:</span></td>
@@ -367,7 +344,7 @@ function Tour(props) {
                         </tr>
                         <tr>
                           <td><span>Nơi khởi hành:</span></td>
-                          <td><span>Vinh</span></td>
+                          <td><span>Hà Nội</span></td>
                         </tr>
                       </table>
                     </div>
