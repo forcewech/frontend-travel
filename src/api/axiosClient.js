@@ -25,7 +25,7 @@ const getFirebasetoken = async () => {
   });
 };
 const axiosClient = axios.create({
-  baseURL: `http://0.tcp.ap.ngrok.io:11172`,
+  baseURL: `http://localhost:666`,
   headers: {
     "content-type": "application/json",
   },
