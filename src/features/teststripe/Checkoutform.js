@@ -27,7 +27,6 @@ export default function CheckoutForm(props) {
         if (!stripe || !elements) {
             return;
         }
-        console.log("ok");
         setBtn(false)
         var res = await stripeApi.poststripe({ email, price }).then(ok => {
             return ok.client_secret;
@@ -45,7 +44,6 @@ export default function CheckoutForm(props) {
             message.warning("Số thẻ hoặc thông tin khác không hợp lệ!");
         } else {
             if (result.paymentIntent.status === 'succeeded') {
-                console.log("thanh cong");
                 Axios.post("http://localhost:666/sendemail/", {
                     thanhtien: thanhtien,
                     email: email,

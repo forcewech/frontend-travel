@@ -38,10 +38,10 @@ export default function Hotel() {
                             </div>
                             <div className="content___box---title">
                                 <div className="content___box---title---name">
-                                    <span>vinpeart resort & spa đà nẵng</span>
+                                    <span>vinpeart resort & spa Nha Trang</span>
                                 </div>
                                 <div className="content___box---title---price">
-                                    <span>Giá từ: <span className="price-text">8.550.000 vnđ</span></span>
+                                    <span>Giá từ: <span className="price-text">2.550.000 vnđ</span></span>
                                 </div>
                             </div>
                             <div className="content___box---btn">
@@ -56,10 +56,10 @@ export default function Hotel() {
                             </div>
                             <div className="content___box---title">
                                 <div className="content___box---title---name">
-                                    <span>vinpeart resort & spa đà nẵng</span>
+                                    <span>vinpeart resort & spa Đà Nẵng</span>
                                 </div>
                                 <div className="content___box---title---price">
-                                    <span>Giá từ: <span className="price-text">8.550.000 vnđ</span></span>
+                                    <span>Giá từ: <span className="price-text">4.701.805 vnđ</span></span>
                                 </div>
                             </div>
                             <div className="content___box---btn">
@@ -74,10 +74,10 @@ export default function Hotel() {
                             </div>
                             <div className="content___box---title">
                                 <div className="content___box---title---name">
-                                    <span>vinpeart resort & spa đà nẵng</span>
+                                    <span>vinpeart resort & spa Vũng Tàu</span>
                                 </div>
                                 <div className="content___box---title---price">
-                                    <span>Giá từ: <span className="price-text">8.550.000 vnđ</span></span>
+                                    <span>Giá từ: <span className="price-text">4.230.000 vnđ</span></span>
                                 </div>
                             </div>
                             <div className="content___box---btn">
@@ -92,10 +92,10 @@ export default function Hotel() {
                             </div>
                             <div className="content___box---title">
                                 <div className="content___box---title---name">
-                                    <span>vinpeart resort & spa đà nẵng</span>
+                                    <span>vinpeart resort & spa Cà Mau</span>
                                 </div>
                                 <div className="content___box---title---price">
-                                    <span>Giá từ: <span className="price-text">8.550.000 vnđ</span></span>
+                                    <span>Giá từ: <span className="price-text">6.550.000 vnđ</span></span>
                                 </div>
                             </div>
                             <div className="content___box---btn">
@@ -110,10 +110,10 @@ export default function Hotel() {
                             </div>
                             <div className="content___box---title">
                                 <div className="content___box---title---name">
-                                    <span>vinpeart resort & spa đà nẵng</span>
+                                    <span>vinpeart resort & spa Quảng Ninh</span>
                                 </div>
                                 <div className="content___box---title---price">
-                                    <span>Giá từ: <span className="price-text">8.550.000 vnđ</span></span>
+                                    <span>Giá từ: <span className="price-text">5.550.000 vnđ</span></span>
                                 </div>
                             </div>
                             <div className="content___box---btn">
@@ -128,10 +128,10 @@ export default function Hotel() {
                             </div>
                             <div className="content___box---title">
                                 <div className="content___box---title---name">
-                                    <span>vinpeart resort & spa đà nẵng</span>
+                                    <span>vinpeart resort & spa Hạ Long</span>
                                 </div>
                                 <div className="content___box---title---price">
-                                    <span>Giá từ: <span className="price-text">8.550.000 vnđ</span></span>
+                                    <span>Giá từ: <span className="price-text">4.550.000 vnđ</span></span>
                                 </div>
                             </div>
                             <div className="content___box---btn">

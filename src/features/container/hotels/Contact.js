@@ -1,11 +1,28 @@
 import { Button } from '@material-ui/core'
-import React from 'react'
+import React, { useState } from 'react'
 import { Link } from 'react-router-dom'
+import { useHistory } from 'react-router-dom';
 import Footer from '../trangchu/footer/Footer'
 import img9 from "./img/9.jpg"
 import "./contact.css"
+import Axios from 'axios'
+import { message } from 'antd'
 export default function Contact() {
-
+    const [hoten, setHoTen] = useState("");
+    const [email, setEmail] = useState("");
+    const [diachi, setDiaChi] = useState("");
+    const [yeucau, setYeuCau] = useState("");
+    const history = useHistory();
+    function handle(){
+        Axios.post("http://localhost:666/sendemail/email/hotel", {
+                    hoten,
+                    email,
+                    diachi,
+                    yeucau
+                })
+        message.success("Liên hệ thành công!");
+        history.push(`/`);
+    }
     return (
         <div id="contact">
             <div className="breadcrumb">
@@ -49,25 +66,24 @@ export default function Contact() {
                             <p>Dấu <span className="color-red">*</span> là thông tin bắt buộc</p>
                             <div className="form-group">
                                 <label for="">Họ tên <span className="color-red">*</span></label>
-                                <input type="text" className="form-control" name="" id="" aria-describedby="helpId"
-                                    placeholder="" />
+                                <input type="text" className="form-control" value={hoten} onChange={(event) => setHoTen(event.target.value)} id="name" aria-describedby="helpId"/>
                             </div>
                             <div className="form-group">
                                 <label for="">Email <span className="color-red">*</span></label>
-                                <input type="text" className="form-control" name="" id="" aria-describedby="helpId"
-                                    placeholder="" />
+                                <input type="text" className="form-control" value={email} onChange={(event) => setEmail(event.target.value)} id="email" aria-describedby="helpId"
+                                     />
                             </div>
                             <div className="form-group">
                                 <label for="">Địa chỉ <span className="color-red">*</span></label>
-                                <input type="text" className="form-control" name="" id="" aria-describedby="helpId"
-                                    placeholder="" />
+                                <input type="text" className="form-control" value={diachi} onChange={(event) => setDiaChi(event.target.value)} id="diachi" aria-describedby="helpId"
+                                     />
                             </div>
                             <div className="form-group">
                                 <label for="">Yêu cầu <span className="color-red">*</span></label>
-                                <textarea name="" className="form-control" id="" cols="30" rows="3"></textarea>
+                                <textarea  className="form-control" value={yeucau} onChange={(event) => setYeuCau(event.target.value)} id="yeucau" cols="30" rows="3"></textarea>
                             </div>
                             <div className="btn-dt">
-                                <Button className=" pl-5 pr-5" variant="contained" color="secondary">
+                                <Button className=" pl-5 pr-5" variant="contained" color="secondary" onClick={handle}>
                                     Liên hệ ngay
                                 </Button>
                             </div>

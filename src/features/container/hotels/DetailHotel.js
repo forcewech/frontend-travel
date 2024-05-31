@@ -75,7 +75,7 @@ export default function DetailHotel() {
                                         </tr>
                                         <tr>
                                             <td className="pr-5">Giá từ</td>
-                                            <td>8.500.000 vnđ</td>
+                                            <td>4.701.805 vnđ</td>
                                         </tr>
                                     </table>
                                 </div>
